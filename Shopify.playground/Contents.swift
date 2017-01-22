@@ -168,7 +168,7 @@ class OrdersTotalCounter {
         
         for item in items {
             if let orderObject = item as? [String: Any] {
-                if let price = orderObject["total_price"] as? String {
+                if let price = orderObject["total_price_usd"] as? String {
                     sum += Double(price)!
                 }
             }
